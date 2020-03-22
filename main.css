@@ -2,7 +2,8 @@ body {
     font: 15px/1.5 Avenir Next;
     margin: 0px;
     padding: 0px;
-    background-color: #f4f4f4;
+    background-image: url(Group_5.svg);
+    background-size: 2000px 2800px;
 }
 
 
@@ -184,28 +185,36 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(#aff8dc, #12b8a2);
+    background-color: black;
+    opacity: 87%;
     transform: skewY(-6deg);
     transform-origin: top left;
 }
 
 #firststep .heading {
     display: flex;
-    font: 1em skia;
-    font-size: 100px;
-    color: rgb(0, 0, 0);
+    font: 10em sans-serif;
+    font-size: 10vw;
     justify-content: center;
-    padding: 20% 0 0;
-    transform: skewY(5deg);
+    padding: 15% 0 0;
+    transform: skewY(6deg);
+    background-image: linear-gradient(to right, rgba(4, 233, 233, 0.89) 40%, #550575 60%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
 }
 
 #firststep .heading_2 {
     display: flex;
-    font: sans-serif;
     font-size: 70px;
     font-style: italic;
     justify-content: center;
-    transform: skewY(5deg);
+    transform: skewY(6deg);
+    background-image: linear-gradient(to right, #550575 40%, rgba(4, 233, 233, 0.89) 60%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 #firststep p {
@@ -213,14 +222,15 @@ body {
     font-size: medium;
     display: flex;
     justify-content: center;
-    transform: skewY(5deg);
+    transform: skewY(6deg);
+    color: rgba(4, 233, 233, 0.89);
 }
 
 .heading {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
+    -webkit-animation-duration: 3.5s;
+    animation-duration: 3.5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
@@ -250,6 +260,7 @@ body {
     animation-duration: 5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+    animation-delay: 1s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -277,6 +288,7 @@ body {
     animation-duration: 5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+    animation-delay: 1.5s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -298,16 +310,36 @@ body {
 }
 
 
+/* skills-bar */
+
+#professional-skills-bar {
+    padding: 2%;
+    padding-left: 5%;
+    display: flex;
+}
+
+.skill-bar {
+    display: flex;
+    font-size: 25px;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #550575 0%, rgba(4, 233, 233, 0.89) 60%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
 /* skills */
 
-#skills {
-    background-color: #f4f4f4;
-    padding-bottom: 3%;
+#skills p {
+    font-weight: 450;
+    font-size: 1vw;
+    margin-top: 0.25%;
 }
 
 #skills .skills_class {
     width: 50%;
-    margin: 0 auto;
+    padding-left: 5%;
 }
 
 @keyframes load {
@@ -335,34 +367,20 @@ body {
 }
 
 .bar {
-    background-color: #EEE;
-    padding: px;
-    border-radius: 15px;
-    margin-bottom: 15px;
-    font-size: 12px;
-    color: black;
-    font-weight: light;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 0px;
+    border-radius: 30px;
 }
 
 .bar::before {
     content: attr(data-skill);
-    background-color: black;
+    background-image: linear-gradient(to right, #550575 0%, rgba(50, 235, 235, 0.89) 60%);
     display: inline-block;
-    padding: 5px 0 5px 1px;
+    padding: 3.5px;
     border-radius: inherit;
     animation: load 2s 0s;
     -webkit-animation: load 2s 0s;
     -moz-animation: load 2s 0s;
     -o-animation: load 2s 0s;
-}
-
-.bar.front::before {
-    background-color: black;
-}
-
-.bar.back::before {
-    background-color: black;
 }
 
 .bar.expert::before {
@@ -390,78 +408,61 @@ body {
 }
 
 
-/* about */
+/* about bar */
+
+.about {
+    display: flex;
+    padding: 2%;
+    padding-left: 5%;
+    font-size: 25px;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #550575 40%, rgba(4, 233, 233, 0.89) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* about contents */
 
 #about {
-    position: relative;
-    overflow: hidden;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    opacity: 87%;
 }
 
-.about_bg::before {
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    top: -50%;
-    left: -50%;
-    z-index: -1;
-    background-color: orange 0 0 repeat;
-    transform: rotate(30deg);
-}
-
-#about h1 {
-    color: black;
-    align-self: center;
-    font-size: 20px;
+#about .about__bg {
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    font-weight: 250;
+    font-size: medium;
 }
 
 .sidebar1 {
-    color: palegoldenrod;
+    display: flex;
+    color: rgba(117, 231, 231, 0.89);
     text-align: justify;
-    padding: 0px 5px;
+    padding: 20px 20px;
+    margin-left: auto;
 }
 
 .sidebar2 {
-    color: palegoldenrod;
+    display: flex;
+    color: rgba(119, 255, 255, 0.89);
     text-align: justify;
-    padding: 0px 5px;
-}
-
-
-/* demo */
-
-#justademo .demo {
-    height: 100vh;
-    margin: 0;
-    background-color: orange;
-    position: relative;
-}
-
-#justademo .demo:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 300px;
-    background: #000;
-    transform: skew(-40deg);
-    transform-origin: top;
-}
-
-#justademo .demo:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 300px;
-    background: pink;
-    transform: skew(-78deg);
-    transform-origin: top;
+    padding: 20px 20px;
+    margin-right: auto;
 }
 
 
 /* Contact */
+
+#contact {
+    height: 10vw;
+}
 
 #contact .details {
     display: flex;
@@ -470,14 +471,18 @@ body {
     justify-content: center;
     width: auto;
     background: white;
-    padding-top: 3%;
-    padding-bottom: 2%;
+    margin-top: 3%;
 }
 
-#contact h1 {
-    font-size: 18px;
+#contact p {
+    display: flex;
+    font-size: 25px;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #550575 0%, rgba(4, 233, 233, 0.89) 60%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
     align-self: center;
-    color: #12273b;
 }
 
 .btn.pill img {
@@ -543,8 +548,8 @@ body {
 /* footer */
 
 footer {
-    background: linear-gradient(#ff9d2f, #ff6126);
-    color: palegoldenrod;
+    background: black;
+    color: rgb(39, 176, 218);
     padding: 10px;
     width: auto;
     margin-top: 0px;
