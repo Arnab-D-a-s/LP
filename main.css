@@ -147,7 +147,7 @@ body {
     justify-content: center;
     transform: scale(0);
     transition: all 0 ease;
-    opacity: 90%;
+    opacity: 0.9;
 }
 
 .menu-wrap .menu>div>div {
@@ -192,7 +192,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: 87%;
+    opacity: .87;
     transform: skewY(-6deg);
     transform-origin: top left;
 }
@@ -204,7 +204,7 @@ body {
     justify-content: center;
     padding: 15% 0 0;
     transform: skewY(6deg);
-    background-image: linear-gradient(to right, rgba(4, 233, 233, 0.89) 40%, #550575 60%);
+    background-image: linear-gradient(to right, rgba(4, 233, 233, 0.89) 40%, #550575 80%);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -327,9 +327,9 @@ body {
 
 .skill-bar {
     display: flex;
-    font-size: 25px;
-    font-weight: 500;
-    background-image: linear-gradient(to right, #550575 0%, rgba(4, 233, 233, 0.89) 60%);
+    font-size: 2vw;
+    font-weight: 245;
+    background-image: linear-gradient(to right, #550575 0%, rgba(4, 233, 233, 0.89) 80%);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -421,9 +421,9 @@ body {
     display: flex;
     padding: 2%;
     padding-left: 5%;
-    font-size: 25px;
-    font-weight: 500;
-    background-image: linear-gradient(to right, #550575 40%, rgba(4, 233, 233, 0.89) 80%);
+    font-size: 2vw;
+    font-weight: 245;
+    background-image: linear-gradient(to right, #550575 10%, rgba(4, 233, 233, 0.89) 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -437,7 +437,7 @@ body {
     display: flex;
     align-items: center;
     background-color: black;
-    opacity: 87%;
+    opacity: 0.87;
 }
 
 #about .about__bg {
@@ -483,8 +483,8 @@ body {
 
 #contact p {
     display: flex;
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 1.5vw;
+    font-weight: 200;
     background-image: linear-gradient(to right, #550575 0%, rgba(4, 233, 233, 0.89) 60%);
     color: transparent;
     -webkit-background-clip: text;
@@ -510,7 +510,7 @@ body {
 
 #contact .btn:hover {
     background-image: linear-gradient(to right, black 0%, rgb(57, 241, 226) 50%, black 100%);
-    opacity: 100%;
+    opacity: 1;
     transform: rotate(360deg);
     transition-duration: 2s;
 }
@@ -563,7 +563,7 @@ body {
 
 footer {
     background: black;
-    opacity: 87%;
+    opacity: 0.87;
     color: rgb(39, 176, 218);
     padding: 10px;
     width: auto;
